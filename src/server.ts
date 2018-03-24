@@ -12,11 +12,13 @@ db.serialize(() =>{
     db.each("SELECT * FROM Customers", (err, row) => {
              console.log(row.CustomerID + ": " + row.CompanyName);
              //console.log(row.CompanyName);
-    
-    
+   
+   
+
+   
     })
     
 })
 
-
+console.log("fick Dich");
 db.close();
